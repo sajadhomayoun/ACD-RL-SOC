@@ -12,22 +12,9 @@ class SocAlertEnv(gym.Env):
         self.max_steps = 5
         self.steps = 0
 
-        self.params = {
-            "compromise_multiplier": 10,
-            "ignore_bias_penalty": 0.5,
-            "alert_reward": 3,
-            "alert_penalty": -1,
-            "isolate_reward_high": 8,
-            "isolate_reward_mid": 4,
-            "isolate_penalty_low": -0.5,
-            "isolate_penalty_uncertain": -1.5
-        }
-
-        if params is None and os.path.exists("current_params.json"):
-            with open("current_params.json", "r") as f:
-                self.params.update(json.load(f))
-        elif isinstance(params, dict):
-            self.params.update(params)
+        self.params = {}
+        with open("current_params.json", "r") as f:
+            self.params.update(json.load(f))
 
         self.state = self._generate_state()
 
