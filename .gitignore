@@ -1,0 +1,65 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+acd-env/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Logs and temporary files
+*.log
+*.out
+*.tmp
+*.swp
+*.bak
+
+# Model files
+*.zip
+*.pth
+*.pt
+*.h5
+
+# TensorBoard and experiment outputs
+runs/
+tb_logs/
+wandb/
+checkpoints/
+results/
+logs/
+
+# Data files
+*.csv
+*.json
+*.npy
+*.npz
+
+# System files
+.DS_Store
+Thumbs.db
+
+# VSCode
+.vscode/
+
+# PyCharm
+.idea/
+*.iml
+
+# OS files
+*.~*
+*.orig
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyc
+
+*.zip
+
+evaluation/output/*
+*.pdf
+evaluation/output*
