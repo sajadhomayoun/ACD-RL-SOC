@@ -6,7 +6,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from stable_baselines3 import PPO
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
-from env.soc_env import SocAlertEnv
+from environments.soc_env import SocAlertEnv
 
 
 def format_label(label):

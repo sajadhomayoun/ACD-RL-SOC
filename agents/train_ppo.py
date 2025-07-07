@@ -6,8 +6,8 @@ import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 # Import both environments
-from env.soc_env import SocAlertEnv
-from env.soc_env import SocFlatEnv
+from environments.soc_env import SocAlertEnv
+from environments.soc_env import SocFlatEnv
 
 def load_params():
     with open("current_params.json", "r") as f:
